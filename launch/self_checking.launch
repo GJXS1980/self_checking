@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<launch>
+
+    <node pkg = "self_checking" type = "SELF_CHECK_NODE" name = "self_checking">
+        <!-- 雷达 -->
+        <param name="playradar_path" value="play /opt/ros/melodic/share/self_checking/voice/arv_radar.wav"/>
+        <!-- 前摄像头 -->
+        <param name="playprecamera_path" value="play /opt/ros/melodic/share/self_checking/voice/arv_precamera.wav"/>
+        <!-- 后摄像头 -->
+        <param name="playpostcamera_path" value="play /opt/ros/melodic/share/self_checking/voice/arv_postcamera.wav"/>
+        <!-- 传感器板 -->
+        <param name="playstm32_path" value="play /opt/ros/melodic/share/self_checking/voice/arv_stm32.wav"/>
+        <!-- 超声波 -->
+        <param name="playultrasonic_path" value="play /opt/ros/melodic/share/self_checking/voice/arv_ultrasonic.wav"/>
+        <!-- 陀螺仪 -->
+        <param name="plaympu_path" value="play /opt/ros/melodic/share/self_checking/voice/arv_mpu.wav"/>
+        <!-- 低电量 -->
+        <param name="playpower_low_path" value="play /opt/ros/melodic/share/self_checking/voice/power_low.wav"/>
+        <!-- 电源 -->
+        <param name="playpower_path" value="play /opt/ros/melodic/share/self_checking/voice/power.wav"/>
+
+    </node>
+
+
+</launch>
